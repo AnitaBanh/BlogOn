@@ -1,14 +1,20 @@
-<!-- Loop over each object in the projects array -->
+<!-- Loop over each object in the blog array -->
 <a>{{#each blogs as |blog| }}
 <section class="card">
-    <p> by {{blog.user.name}} on {{format_date blog.date_created}}</p>
-  </div>
+  <a class="card-body">
   <div class="col-md-7">
     <p>
+      {{blog.title}}
+    </p>
+    <p class="card-text">
       {{blog.description}}
     </p>
+    <p> by {{blog.user.name}} on {{format_date blog.date_created}}</p>
   </div>
-</div>
+    <p>
+    <button class="btn btn-primary">Add a comment</button>
+  </p>
+</a>
 </section>
 {{/each}}
 </a>
