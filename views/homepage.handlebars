@@ -1,7 +1,7 @@
 <!-- Loop over each object in the projects array -->
 <a>{{#each blogs as |blog| }}
-
-    <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+<section class="card">
+    <p> by {{blog.user.name}} on {{format_date blog.date_created}}</p>
   </div>
   <div class="col-md-7">
     <p>
@@ -9,5 +9,6 @@
     </p>
   </div>
 </div>
+</section>
 {{/each}}
 </a>

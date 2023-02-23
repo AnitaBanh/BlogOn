@@ -55,9 +55,10 @@ router.get('/blogs/:id', async (req, res) => {
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
+    // include model: Comment ?
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Blog }],
+      include: [{ model: Blog}],
     });
 
     const user = userData.get({ plain: true });
