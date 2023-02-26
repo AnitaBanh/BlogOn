@@ -1,8 +1,8 @@
-# Tech-Blog
+# Blog On
 ![](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
-A site to publish blog posts and comment on other posts as well.
+A site to publish blog posts and read blog posts by other users as well. 
  
 ## Table of Contents 
 
