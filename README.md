@@ -1,12 +1,10 @@
 # Tech-Blog
-
 ![](https://img.shields.io/badge/license-MIT-green)
 
-  ## Description
-  A site to publish blog posts and comment on other posts as well.
+## Description
+A site to publish blog posts and comment on other posts as well.
  
-
-  ## Table of Contents 
+## Table of Contents 
 
   - [Installation](##installation)
   - [Usage](#usage)
@@ -15,25 +13,25 @@
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ## Installation
-  No installation required. The app is deployed on Heroku.
+## Installation
+No installation required. The app is deployed on Heroku.
 
-  ## Usage
-  Please visit the link below to use the application: 
+## Usage
+Please visit the link below to use the application: 
    INSERT LINK
 
-  ## License
-
+## License
 Licensed under the MIT License - see the [LICENSE.md](https://github.com/AnitaBanh/Tech-Blog/blob/main/LICENSE) file for details.
 
 
-  ## Contributing
-  N/A
+## Contributing
+N/A
 
-  ## Tests
-  None
+## Tests
+None
 
-  ## Questions
-  <https://github.com/AnitaBanh>
-  Please contact me with additional questions at anitabanhtx@gmail.com.
+## Questions
+<https://github.com/AnitaBanh>
+
+Please contact me with additional questions at anitabanhtx@gmail.com.
   
