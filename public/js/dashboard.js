@@ -1,82 +1,47 @@
-const router = require('express').Router();
-const { Project, User } = require('../models');
-const withAuth = require('../utils/auth');
-
-router.get('/', async (req, res) => {
-  try {
-    // Get all projects and JOIN with user data
-    const projectData = await Project.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
-
-    // Serialize data so the template can read it
-    const projects = projectData.map((project) => project.get({ plain: true }));
-
-    // Pass serialized data and session flag into template
-    res.render('homepage', { 
-      projects, 
-      logged_in: req.session.logged_in 
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-router.get('/blog/:id', async (req, res) => {
-  try {
-    const blogData = await Blog.findByPk(req.params.id, {
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
-
-    const blog = blogData.get({ plain: true });
-
-    res.render('blog', {
-      ...blog,
-      logged_in: req.session.logged_in
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-// Use withAuth middleware to prevent access to route
-router.get('/dashboard', withAuth, async (req, res) => {
-  try {
-    // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Blog }],
-    });
-
-    const user = userData.get({ plain: true });
-
-    res.render('dashboard', {
-      ...user,
-      logged_in: true
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-router.get('/login', (req, res) => {
-  // If the user is already logged in, redirect the request to another route
-  if (req.session.logged_in) {
-    res.redirect('/dashboard');
-    return;
-  }
-
-  res.render('login');
-});
-
-module.exports = router;
+const newFormHandler = async (event) => {
+    event.preventDefault();
+  
+    const title = document.querySelector('#post-name').value.trim();
+    const description = document.querySelector('#post-desc').value.trim();
+  
+    if (title && description) {
+      const response = await fetch(`/api/blogs`, {
+        method: 'POST',
+        body: JSON.stringify({ title, description }),
+        headers: {
+          'Content-Type': 'application/json',
+        },  
+      });
+  
+      if (response.ok) {
+        document.location.replace('/dashboard');
+      } else {
+        alert('Failed to create project');
+      }
+    }
+  };
+  
+  const delButtonHandler = async (event) => {
+    if (event.target.hasAttribute('data-id')) {
+      const id = event.target.getAttribute('data-id');
+  
+      const response = await fetch(`/api/blogs/${id}`, {
+        method: 'DELETE',
+      });
+  
+      if (response.ok) {
+        document.location.replace('/dashboard');
+      } else {
+        alert('Failed to delete blog');
+      }
+    }
+  };
+  
+  document
+    .querySelector('.new-post-form')
+    .addEventListener('submit', newFormHandler);
+  
+  document
+    .querySelector('.post-list')
+    .addEventListener('click', delButtonHandler);
+  
