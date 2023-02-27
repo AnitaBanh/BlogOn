@@ -19,9 +19,13 @@ No installation required. The app is deployed on Heroku.
 ## Usage
 Please visit the link below to use the application: 
    https://blog-on.herokuapp.com/
+   
    Homepage
+   
    ![image](https://user-images.githubusercontent.com/120350675/221468208-2204c83d-085a-483d-a827-d99f565a3da1.png)
+   
    Dashboard
+   
    ![image](https://user-images.githubusercontent.com/120350675/221471611-3c583d7a-2be2-4973-b34d-2938877eae83.png)
 
 
