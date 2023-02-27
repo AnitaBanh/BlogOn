@@ -31,7 +31,7 @@ Please visit the link below to use the application:
 Licensed under the MIT License - see the [LICENSE.md](https://github.com/AnitaBanh/Tech-Blog/blob/main/LICENSE) file for details.
 
 ## Contributing
-N/A
+Based on https://github.com/the-Coding-Boot-Camp-at-UT/UTA-VIRT-FSF-FT-12-2022-U-LOLC/tree/main/14-MVC/01-Activities/28-Stu_Mini-Project
 
 ## Tests
 None
