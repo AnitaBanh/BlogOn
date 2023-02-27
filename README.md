@@ -21,13 +21,10 @@ Please visit the link below to use the application:
    https://blog-on.herokuapp.com/
    
    Homepage
-   
-   ![image](https://user-images.githubusercontent.com/120350675/221468208-2204c83d-085a-483d-a827-d99f565a3da1.png)
-   
-   Dashboard
-   
-   ![image](https://user-images.githubusercontent.com/120350675/221471611-3c583d7a-2be2-4973-b34d-2938877eae83.png)
+![image](https://user-images.githubusercontent.com/120350675/221471930-44733e77-065f-4860-bcdc-79303ba1f1b5.png)
 
+   User Dashboard
+   ![image](https://user-images.githubusercontent.com/120350675/221471865-f9f5bce9-69aa-4072-a584-bafb47c1c040.png)
 
 
 ## License
