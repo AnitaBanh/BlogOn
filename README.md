@@ -19,6 +19,9 @@ No installation required. The app is deployed on Heroku.
 ## Usage
 Please visit the link below to use the application: 
    https://blog-on.herokuapp.com/
+   
+   ![image](https://user-images.githubusercontent.com/120350675/221468208-2204c83d-085a-483d-a827-d99f565a3da1.png)
+
 
 ## License
 Licensed under the MIT License - see the [LICENSE.md](https://github.com/AnitaBanh/Tech-Blog/blob/main/LICENSE) file for details.
