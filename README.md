@@ -18,11 +18,10 @@ No installation required. The app is deployed on Heroku.
 
 ## Usage
 Please visit the link below to use the application: 
-   INSERT LINK
+   https://blog-on.herokuapp.com/
 
 ## License
 Licensed under the MIT License - see the [LICENSE.md](https://github.com/AnitaBanh/Tech-Blog/blob/main/LICENSE) file for details.
-
 
 ## Contributing
 N/A
