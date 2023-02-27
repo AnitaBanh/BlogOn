@@ -1,28 +1,9 @@
-/* header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+header {
+  background-color: #7DE2D1;
 }
-
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
+.card {
+  background-color: #FFFBFF;
 }
-
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
-}
-
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
-} */
-
 
 form {
   display: flex;
@@ -32,7 +13,7 @@ form {
   
   label {
   font-size: 1.2rem;
-  color: #4a4a4a;
+  color: #474350;
   margin-bottom: 0.5rem;
   }
   
@@ -47,7 +28,7 @@ form {
   
   button {
   background-color: #2f80ed;
-  color: #fff;
+  color: #FFFBFF;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
   border: none;
@@ -61,5 +42,6 @@ form {
   
   body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #2F80ED;
   }
   
