@@ -2,7 +2,7 @@
 ![](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
-A site to publish blog posts and read blog posts by other users as well. 
+A site to publish blog posts and read blog posts by other users as well. This web application was built using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
  
 ## Table of Contents 
 
